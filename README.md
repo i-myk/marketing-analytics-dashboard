@@ -268,7 +268,7 @@ Looker Studio Dashboard
 
 ## Project Architecture
 
-![Architecture](images/architecture_diagram.png)
+![Architecture](images/architecture_diagrams.png)
 
 ---
 
