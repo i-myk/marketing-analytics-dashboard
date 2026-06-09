@@ -2,6 +2,12 @@
 
 A marketing analytics project that combines Facebook Ads, Google Ads, and TikTok Ads data into a unified reporting dataset using SQL and BigQuery.
 
+### Live Dashboard
+🔗 (https://datastudio.google.com/reporting/6b6d395a-a1e4-4fa3-89a5-08570f36a910)
+
+### Technologies
+Google BigQuery • SQL • Looker Studio • GitHub
+
 ## Dashboard Preview
 
 ![Dashboard](images/dashboard_overview.png)
