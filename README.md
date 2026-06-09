@@ -6,9 +6,6 @@ A marketing analytics project that combines Facebook Ads, Google Ads, and TikTok
 
 ![Dashboard](images/dashboard_overview.png)
 
-## Architecture
-
-![Architecture](images/architecture_diagram.png)
 ________________________________________
 ## Project Overview
 
@@ -25,12 +22,13 @@ The project includes:
 - Reporting views for analytics
 - Interactive dashboard in Looker Studio
 ________________________________________
-Data Sources
-Raw CSV files were uploaded into BigQuery as separate raw tables:
-•	raw_facebook_ads
-•	raw_google_ads
-•	raw_tiktok_ads
-These tables represent the original data before transformation.
+## Technologies Used
+
+- Google BigQuery
+- SQL
+- Looker Studio
+- GitHub
+- CSV Data Sources
 ________________________________________
 Data Flow
 Raw CSV Files
@@ -43,11 +41,56 @@ Analytical Views
         ↓
 Looker Studio Dashboard
 ________________________________________
-Project Architecture
- 
-________________________________________
-Dashboard Preview
- 
+
+## Project Workflow
+Step 1: Raw Data Upload
+
+I started with three raw CSV files:
+
+Facebook Ads
+Google Ads
+TikTok Ads
+
+These files were uploaded into BigQuery as raw tables:
+
+raw_facebook_ads
+raw_google_ads
+raw_tiktok_ads
+
+These tables represent the original source data before any transformation.
+
+---
+
+Step 2: Data Standardization
+
+Each platform had slightly different column names and available metrics.
+
+For example:
+
+Facebook used ad_set_id and ad_set_name
+Google Ads used ad_group_id and ad_group_name
+TikTok used adgroup_id and adgroup_name
+
+I standardized these fields into common names:
+
+ad_group_id
+ad_group_name
+cost
+conversions
+conversion_value
+
+This made the data consistent across platforms.
+
+
+
+
+
+
+
+
+
+
+
 ________________________________________
 1. Create Unified Marketing Table
 The first step was to standardize data from Facebook Ads, Google Ads, and TikTok Ads into one unified table.
