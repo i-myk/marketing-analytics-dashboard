@@ -1,17 +1,29 @@
-# marketing-analytics-dashboard
-Cross-Channel Marketing Analytics Dashboard using BigQuery, SQL and Looker Studio
-📊 Cross-Channel Marketing Analytics Dashboard
-Project Overview
-This project is an end-to-end marketing analytics solution built with Google BigQuery, SQL, and Looker Studio.
-The goal was to combine marketing data from multiple advertising platforms into one unified dataset, calculate key marketing KPIs, validate the data, and build an interactive dashboard for business analysis.
-The dashboard helps compare performance across Facebook Ads, Google Ads, and TikTok Ads.
+# Cross-Channel Marketing Analytics Dashboard
+
+A marketing analytics project that combines Facebook Ads, Google Ads, and TikTok Ads data into a unified reporting dataset using SQL and BigQuery.
+
+## Dashboard Preview
+
+![Dashboard](images/dashboard_overview.png)
+
+## Architecture
+
+![Architecture](images/architecture_diagram.png)
 ________________________________________
-Tech Stack
-•	Google BigQuery
-•	SQL
-•	Looker Studio
-•	CSV files
-•	GitHub
+## Project Overview
+
+This project demonstrates how to build a complete marketing analytics workflow using raw CSV files, SQL transformations, BigQuery, and Looker Studio.
+
+The goal was to create a unified reporting layer for cross-channel performance analysis across Facebook Ads, Google Ads, and TikTok Ads.
+
+The project includes:
+
+- Data ingestion from CSV files
+- Data standardization across platforms
+- SQL transformations in BigQuery
+- Data validation checks
+- Reporting views for analytics
+- Interactive dashboard in Looker Studio
 ________________________________________
 Data Sources
 Raw CSV files were uploaded into BigQuery as separate raw tables:
